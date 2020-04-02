@@ -1,0 +1,69 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+}
+body{
+	font-family: cursive,sans-serif;
+}
+header>h1{
+	margin: 40px;
+	text-align: center;
+	font-size: 50px;
+	font-family: "lucida console",sans-serif;
+}
+section{
+	border: solid 1px black;
+	position: relative; 
+	margin: 10px 10px 10px 10px;
+	background-color: #cabfbf;
+}
+section>h2{
+	border: solid 1px black;
+	height: 40px;
+	width: 100px;
+	float: right;
+	text-align: center;
+}
+section>article{
+	clear: right;
+	padding: 14px;
+	padding-top: 8px;
+}
+#sectionTitle1{
+	background-color:  #7bb516;
+}
+#sectionTitle2{
+	background-color: #3f81b596;
+}
+#sectionTitle3{
+	background-color: #f5bd18ed;
+}
+
+/*
+	no need to do all case since we only use those below
+*/
+@media (min-width: 992px) {
+	.col-desktop-4{
+		float: left;
+		width:%33.33;
+	}
+}
+@media (min-width:766) and (max-width: 991) {
+	.col-tablet-6, .col-tablet-12{
+		float: left;
+	}
+	.col-tablet-12{
+		width: 100%;
+	}
+	.col-tablet-6{
+		width: 50%;
+	}
+}
+@media (max-width:767px) {
+	.col-tablet-12{
+		float: left;
+	}
+	.col-tablet-12{
+		width: 100%;
+	}
+}
